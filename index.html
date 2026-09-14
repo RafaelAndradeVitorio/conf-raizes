@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/assets/hero-banner.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/enhancements.css">
 </head>
@@ -17,11 +18,17 @@
       <div class="mark">Raízes</div>
       <div>Conferência de Mulheres</div>
     </nav>
+    <picture class="hero-art">
+      <source srcset="/assets/hero-banner.webp" type="image/webp">
+      <img src="/assets/hero-banner.jpg" alt="Raízes de Autoridade - conferência de mulheres" width="1600" height="900" fetchpriority="high" decoding="async">
+    </picture>
     <div class="hero-content">
       <div>
-        <div class="kicker">Conferência de Mulheres · 2026</div>
-        <h1>Raízes<br>de Autoridade</h1>
-        <p class="hero-copy">A autoridade floresce quando a vida encontra a ordem de Deus. Uma conferência para mulheres que desejam reconhecer a autoridade recebida de Deus e exercê-la com maturidade nos diferentes ambientes da vida.</p>
+        <div class="hero-text">
+          <div class="kicker">Conferência de Mulheres · 2026</div>
+          <h1>Raízes<br>de Autoridade</h1>
+          <p class="hero-copy">A autoridade floresce quando a vida encontra a ordem de Deus. Uma conferência para mulheres que desejam reconhecer a autoridade recebida de Deus e exercê-la com maturidade nos diferentes ambientes da vida.</p>
+        </div>
         <a class="cta" href="#inscricao">Quero me inscrever <span>→</span></a>
       </div>
     </div>
@@ -165,12 +172,6 @@
     <span>Raízes de Autoridade</span>
     <span>Conferência de Mulheres · 2026</span>
   </footer>
-  <script src="/hero-part1.js"></script>
-  <script src="/hero-part2.js"></script>
-  <script src="/hero-part3.js"></script>
-  <script src="/hero-part4.js"></script>
-  <script src="/hero-part5.js"></script>
-  <script src="/hero-apply.js"></script>
   <script src="/form.js"></script>
 </body>
 </html>
