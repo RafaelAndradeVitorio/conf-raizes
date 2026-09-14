@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty("--hero-img",`url("data:image/jpeg;base64,${window.HERO_B64}")`);
