@@ -54,6 +54,23 @@
   box-shadow: 0 18px 42px rgba(32, 28, 26, .24);
 }
 
+.form-error {
+  color: #8F351F;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: -10px 0 20px;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-bottom-color: #8F351F;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
 .labs-grid.six-labs .lab-card:last-child {
   grid-column: auto;
   min-height: 245px;
@@ -73,6 +90,23 @@
   .hero .cta {
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 520px) {
+  .journey {
+    grid-template-columns: 1fr;
+  }
+
+  .step,
+  .step:nth-child(2n),
+  .step:nth-last-child(-n+2) {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+  }
+
+  .step:last-child {
+    border-bottom: 0;
   }
 }
 

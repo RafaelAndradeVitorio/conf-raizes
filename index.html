@@ -124,7 +124,7 @@
         <div class="detail"><strong>LABS · 18 DE OUTUBRO</strong><br>16h às 18h · Adolescentes · 18+ · Casadas · Mães · Maturidade · Homens</div>
       </aside>
       <div class="form">
-        <form id="registrationForm">
+        <form id="registrationForm" novalidate>
           <div class="grid2">
             <div>
               <label for="name">Nome completo</label>
@@ -157,6 +157,7 @@
           </select>
           <label for="church">Igreja / comunidade</label>
           <input id="church" name="igreja" placeholder="Opcional">
+          <div class="form-error" id="formError" role="alert" aria-live="polite" hidden></div>
           <button class="submit" type="submit">Enviar inscrição</button>
           <div class="note">Ao enviar, seus dados serão registrados na planilha oficial de inscrições da conferência.</div>
         </form>
@@ -172,6 +173,6 @@
     <span>Raízes de Autoridade</span>
     <span>Conferência de Mulheres · 2026</span>
   </footer>
-  <script src="/form.js"></script>
+  <script src="/form.js?v=20260914-2"></script>
 </body>
 </html>
